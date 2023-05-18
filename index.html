@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
@@ -12,7 +13,10 @@
 </head>
 <body>
     <nav>
-        <img id="img-logo" src="./Assets/logo-blk.png" alt="logo">
+        <!-- <img id="img-logo" src="./Assets/logo-blk.png" alt="logo"> -->
+        <div class="logo-name">
+            <p style="font-size: 2rem;"><code>.portfolio{<br> name: <strong>TK Hiliza;</strong><br>}</code></p>
+        </div>
         <ul class="navbar-links">
             <li><a href="#resume">Resume</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -21,20 +25,32 @@
         </ul>
     </nav>
     <section>
-        <i>arrow left</i>
+        <i class="fa fa-chevron-left"></i>
         <div class="info">
-            <img src="./Assets/clean-cut-img.jpg" alt="photo" style="width: 250px">
-            <h1>Web Developer</h1>
-            <h2>UX/UI Design to Front-end</h2>
-            <p>I'm an aspiring full-stack developer with intermidiate knowledge on Figma, HTML5, CSS5 & JavaScript.</p>
+            <div class="myPic">
+                <img src="./Assets/clean-cut-img.jpg" style="width: 350px; border-radius: 230px 50px 250px 30px;" alt="profile-pic" class="pic">
+            </div>
+            <div class="content">
+                <h2>Web Developer</h2>
+                <h3>UX/UI Design to Front-end</h3>
+                <p>I'm an aspiring full-stack developer with intermidiate <br> knowledge on Figma, HTML5, CSS3 & JavaScript.</p>
+            </div>
         </div>
-        <i>arrow right</i>
+        <i class="fa fa-chevron-right"></i>
     </section>
-    <div class="socialMedia">
-        <img src="" alt="" class="twitter">
-        <img src="" alt="" class="github">
-        <img src="" alt="" class="linkedin">
+    <div class="social-media">
+        <img src="./Assets/twitter-clr.png" alt="" class="twitter">
+        <img src="./Assets/git.png" alt="" class="github">
+        <img src="./Assets/inkdin-clr.png" alt="" class="linkedin">
     </div>
+    <div class="slides-container">
+        <ol class="slides-list">
+          <li class="slide"></li>
+          <li class="slide"></li>
+          <li class="slide"></li>
+        </ol>
+      </div>
+    <!-- JS script -->
     <script src="index.js"></script>
 </body>
 </html>
