@@ -1,30 +1,28 @@
-/* 
-1. Tech
-Chrome
-VS-code
-Git & GitHub
+const slides = document.querySelectorAll('.slide');
+let slideIndex = 0;
 
-2. Design - Figma
-UX/UI wireframe, prototype & design 
+function showSlide(index) {
+  slides.forEach((slide) => slide.classList.remove('active'));
+  slides[index].classList.add('active');
+  document.documentElement.style.setProperty('--current-slide', index + 1);
+}
 
-3. Programming lang
-HTML 5 - responsive web, accesibility 
-CSS 5 - tailwindCSS
-JavaScript & Java/Python
-DOM
-JSON
-API
+function nextSlide() {
+  slideIndex = (slideIndex + 1) % slides.length;
+  showSlide(slideIndex);
+}
 
-4. Framework & Libraries
-Figma
-React.Js/VueJs
-Node.Js
-Express.Js
+function previousSlide() {
+  slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+  showSlide(slideIndex);
+}
 
-5. Database
-MangoDB
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'ArrowRight') {
+    nextSlide();
+  } else if (e.key === 'ArrowLeft') {
+    previousSlide();
+  }
+});
 
-*/
-
-
-
+showSlide(slideIndex);

@@ -33,12 +33,17 @@ nav{
     align-items: center;
 }
 
-.img-logo{
+/* .img-logo{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    /* background-color: rgba(255, 255, 255, 0.5); */
+    background-color: rgba(255, 255, 255, 0.5);
     z-index: 0;
+} */
+.logo-name{
+    margin-left: 20px;
+    /* border: #484848 solid 1px; */
+    box-shadow: 5px 5px 10px rgb(56, 56, 56, .8);
 }
 .navbar-links{
     display: flex;
@@ -73,14 +78,12 @@ li a:hover{
 }
 .myPic{
     position: absolute;
-    width: 625px;
-    height: 618px;
-    top: 100px;
-    left: 250px;
+    top: 80px;
+    left: 300px;
     /* background: url(./Assets/clean-cut-img.jpg); */
-    background-size: 300px;
+    /* background-size: 250px; */
     background-repeat: no-repeat;
-    opacity: 0.4;
+    opacity: .75;
     z-index: 4;
 }
 
